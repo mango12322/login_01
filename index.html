@@ -1,0 +1,51 @@
+<!-- DAY 1 : Login page using HTML & CSS -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인 페이지</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section>
+      <div class="login_form">
+        <form action="">
+          <h2>Login</h2>
+          <div class="out_check"><a href="#"><i class='bx bx-x'></i></a></div>
+          <div class="input_box">
+            <i class="bx bx-envelope"></i>
+            <input type="text" required />
+            <label for="text">Email</label>
+          </div>
+
+          <div class="input_box">
+            <i class="bx bx-low-vision"></i>
+            <input type="password" required />
+            <label for="password">password</label>
+          </div>
+
+          <div class="forget">
+            <label for="">
+              <input type="checkbox" />Remember Me
+              <a href="#">Forget password</a>
+            </label>
+          </div>
+
+          <button>Login</button>
+
+          <div class="register">
+            <label for="">
+              Don't have an account <a href="#">Register</a>
+            </label>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

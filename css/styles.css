@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    background-image: url(/image.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.login_form {    
+    width: 400px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: transparent;
+    border: 2px solid hsl(216, 78%, 65%);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);             /* 블러처리 */
+}
+
+.login_form h2 {
+    font-size: 3em;
+    text-align: center;
+    color: #fff;
+}
+
+.login_form .out_check {
+    position: absolute;    
+    top: 5px;
+    right: 5px;
+    font-size: 1.5em;
+}
+
+.login_form .out_check a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.login_form .out_check a:hover {
+    opacity: 0.7;
+}
+
+.input_box {
+    position: relative;
+    margin: 30px 0px;
+    width: 300px;
+    border-bottom: 2px solid #fff;
+}
+
+.input_box input {
+    width: 100%;
+    height: 50px;
+    background: transparent;  /* 투명하게 만들기 none 과 비슷함 */
+    outline: none;            /* [a, input, button, select, textarea] border 바깥쪽 선 */
+    border: none;
+    padding: 0px 35px 0px 5px;
+    font-size: 1em;
+    color: #fff;
+}
+
+.input_box label {
+    position: absolute;
+    left: 5px;
+    top: 55%;
+    transform: translateY(-45%);
+    font-size: 1em;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s ease-in-out;
+}
+
+/* input 에 focus 되어있거나 값이 적혀져 있다면 label 을 위로 -5 올린다 */
+input:is(:focus, :valid)~label {
+    top: -5px;
+}
+
+.input_box i {
+    position: absolute;
+    top: 20px;
+    right: 9px;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.forget {
+    margin: -15px 0 30px;          /* -사용하면 더 가까워짐 */
+    font-size: 1em;
+    color: #fff;
+}
+
+.forget label a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 50px;
+}
+
+.forget label a:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;    /* underline 거리 조절 */
+}
+
+.forget label input {
+    margin-right: 3px;
+    transform: translateY(2px);
+    background: transparent;
+    accent-color: #50a6bb;       /* 체크박스 체크 시 색 변경 */
+}
+
+.login_form button {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #50a6bb;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.login_form button:hover {
+    opacity: 0.8;
+}
+
+
+.register {
+    margin: 15px 0 30px;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.register a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+.register a:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    font-weight: 700;
+}
